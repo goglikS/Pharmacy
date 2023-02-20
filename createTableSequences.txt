@@ -1,0 +1,97 @@
+CREATE SEQUENCE seq_CATEGORY_CODE
+START WITH 100
+INCREMENT BY 1
+NOCYCLE
+NOCACHE;
+
+
+
+insert into category values (seq_CATEGORY_CODE.nextval,'ALERGIA');
+insert into category values (seq_CATEGORY_CODE.nextval,'ANTISEPTIKURI SASUALEBEBI');
+insert into category values (seq_CATEGORY_CODE.nextval,'GACIEBIS SAWINAARMDEGO MEDIKAMENTEBI');
+insert into category values (seq_CATEGORY_CODE.nextval,'DAMAMSVIDEBELI SASUALEBEBI');
+insert into category values (seq_CATEGORY_CODE.nextval,'DIABETURI MEDIKAMENTEBI');
+insert into category values (seq_CATEGORY_CODE.nextval,'ENDOKRINOLOGIA');
+insert into category values (seq_CATEGORY_CODE.nextval,'VITAMINEBI DA MINERALEBI');
+insert into category values (seq_CATEGORY_CODE.nextval,'TVALIS WVETEBI');
+insert into category values (seq_CATEGORY_CODE.nextval,'INFEQCIIS SAWINAARMDEGO MEDIKAMENTEBI');
+insert into category values (seq_CATEGORY_CODE.nextval,'SISXLWARMOQMNA DA SISXLI');
+insert into category values (seq_CATEGORY_CODE.nextval,'SXVA');
+insert into category values (seq_CATEGORY_CODE.nextval,'TKIVILGAMAYUCEBELI SASUALEBEBI');
+insert into category values (seq_CATEGORY_CODE.nextval,'YURIS DAAVADEBEBIS MKURNALOBISTVIS');
+_________________________________________________________________________________________________________
+CREATE SEQUENCE seq_COUNTRY_CODE
+START WITH 10
+INCREMENT BY 10
+NOCYCLE
+NOCACHE;
+
+insert into country values (seq_COUNTRY_CODE.nextval,'GEORGIA');
+insert into country values (seq_COUNTRY_CODE.nextval,'RUSSIA');
+insert into country values (seq_COUNTRY_CODE.nextval,'TURKEY');
+insert into country values (seq_COUNTRY_CODE.nextval,'ARMENIA');
+insert into country values (seq_COUNTRY_CODE.nextval,'AZERBAIJAN');
+insert into country values (seq_COUNTRY_CODE.nextval,'GERMANY');
+insert into country  values (seq_COUNTRY_CODE.nextval,'SWITZERLAND');
+insert into country  values (seq_COUNTRY_CODE.nextval,'BELGIUM');
+insert into country values (seq_COUNTRY_CODE.nextval,'FRANCE');
+insert into country  values (seq_COUNTRY_CODE.nextval,'UNITED STATES');
+insert into country  values (seq_COUNTRY_CODE.nextval,'UNITED KINGDOM');
+insert into country  values (seq_COUNTRY_CODE.nextval,'ITALY');
+insert into country  values (seq_COUNTRY_CODE.nextval,'IRELAND');
+insert into country  values (seq_COUNTRY_CODE.nextval,'NETHERLANDS');
+insert into country  values (seq_COUNTRY_CODE.nextval,'INDIA');
+insert into country  values (seq_COUNTRY_CODE.nextval,'DENMARK');
+insert into country  values (seq_COUNTRY_CODE.nextval,'SPAIN');
+insert into country  values (seq_COUNTRY_CODE.nextval,'SWEDEN');
+_____________________________________________________________________________________________________________________
+
+CREATE SEQUENCE seq_MANUF_ID
+START WITH 1000
+INCREMENT BY 10
+NOCYCLE
+NOCACHE;
+
+insert into manufacturer values(seq_MANUF_ID.nextval,'BIOFARM',10,'TBILISI','3 GOTUA ST.',6114,995322381811);
+insert into manufacturer values(seq_MANUF_ID.nextval,'OMEGAPHARMA',    30, 'ISTANBUL' ,  'MERDIVENKOY MAH BORA SOKAK #1 A BLOK KAT 5',   34732,    902162507500);
+insert into manufacturer values(seq_MANUF_ID.nextval,'SANTEN',    40, 'YEREVAN  ',  '7 ARGISHTI ST',         1501,    37455551100);
+insert into manufacturer values(seq_MANUF_ID.nextval,'CIPLA',    150,'NEW DELHI',  '32, A BLOCK, DEFENCE COLONY',       110024,    914023075811);
+insert into manufacturer values(seq_MANUF_ID.nextval,'NOVO NORDISK',  160,'HILLEROD',    'BRENNUM PARK 1',         3400,    4544448888);
+insert into manufacturer values(seq_MANUF_ID.nextval,'QILU PHARMA',    170,'MADRID',    'PASEO DE LA CASTELLANA, 40 8A PLANTA',    28046,    34911841918);
+insert into manufacturer values(seq_MANUF_ID.nextval,'RECIPHARM',    180,'SOLNA',    'GARDSVAGEN 10A',         16970,    04686025200);
+insert into manufacturer values(seq_MANUF_ID.nextval,'KESHALI LLC',    50, 'BAKU',    '6-CI MKR., S. MAMMEDOVA KUC. 69',     1113,    994125130621);
+insert into manufacturer values(seq_MANUF_ID.nextval,'BAYER',    60, 'LEVERKUSEN',  'KAISER-WILHELM-ALLEE 1',       51368,    49214301);
+insert into manufacturer values(seq_MANUF_ID.nextval,'ROCHE',    70, 'BASEL',    'GRENZACHERSTRASSE 124',       1111,    405841616881111);
+insert into manufacturer values(seq_MANUF_ID.nextval,'GLAXOSMITHKLINE',  110,'LONDON',    '980 GREAT WEST RD',         88999,    442080475000);
+insert into manufacturer values(seq_MANUF_ID.nextval,'MENARINI',    120,'FIRENZE',    '1 VIA DEI SETTE SANTI',       50131,    3905556801);
+insert into manufacturer values(seq_MANUF_ID.nextval,'MOVETIS',    80, 'VEEDIJK',    'VEEDIJK 58',           2300,    3214404390);
+insert into manufacturer values(seq_MANUF_ID.nextval,'SOLOPHARM',     20, 'SAINT PETERSBURG',  'INDUSTRIALNIY PR., 71/2, LIT. A'  ,    195279 ,  78123854787);
+insert into manufacturer values(seq_MANUF_ID.nextval,'SANOFI',    90, 'PARIS',    '54 RUE LA BOÉTIE',         75008,    330153774545);
+insert into manufacturer values(seq_MANUF_ID.nextval,'JOHNSON & JOHNSON',  100,'RARITAN',    '1003 US-202',           8869,    17325240400);
+insert into manufacturer values(seq_MANUF_ID.nextval,'ALLERGAN PLC',  130,'DUBLIN',    'LONGPHORT HOUSE, BLOCK J, THE EARLSFORT CENTRE', 3666,    35316445200);
+insert into manufacturer values(seq_MANUF_ID.nextval,'KIADIS PHARMA',  140,'AMSTERDAM',  'PAASHEUVELWEG 25A',         1105,    310202405250);
+
+
+________________________________
+CREATE SEQUENCE MED_COD_seq
+START WITH 1
+INCREMENT BY 1
+noCACHE
+nocycle;
+
+
+insert into medication values(MED_COD_seq.nextval,'algisi tableti 5mg','desloratadini', 1000,  to_date('25-10-2018','dd-mm-yyyy') , 1 , 0, 11.59 ,20);
+insert into medication values(MED_COD_seq.nextval,'aktolindi xsnari 250ml flakoni','komb. preparati',  1100, to_date('15-08-2018','dd-mm-yyyy') ,2,  0  ,35.55  ,50);
+insert into medication values(MED_COD_seq.nextval,'amarili tableti 2mg','glimepiridi' , 1150 ,to_date('29-01-2019','dd-mm-yyyy'), 5,  1,  4.00 , 25);
+insert into medication values(MED_COD_seq.nextval,'albucidi /sulfacili/ wveTebi Tvalis 30% 10ml','sulfacilnatriumi',  1050,to_date('07-01-2019','dd-mm-yyyy'),  8  ,0 , 1.75 , 90);
+insert into medication values(MED_COD_seq.nextval,'agregani tableti 150mg','acetilsalicilis mJ',  1080,to_date('22-09-2018 ','dd-mm-yyyy'),10 , 0 , 6.50 , 26);
+insert into medication values(MED_COD_seq.nextval,'CELLTRION-CT-P6','celtrioni',  1130,	to_date('10-10-2018 ','dd-mm-yyyy')	,11	,0,	2.63	,50);
+_________________________________________________________________
+insert into sales values(5421,2,sysdate,5,10,29.41);
+
+
+
+update medication
+set stock=stock-5
+where medication_code=2;
+
